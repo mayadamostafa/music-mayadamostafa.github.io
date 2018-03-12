@@ -1,26 +1,14 @@
 
-$(function(){
-'use strict';
-$(window).scroll(function(){
 
-	var navbar = $('.navbar');
-  if($(window).scrollTop() >= navbar.height()){
-  	navbar.addClass('scrolled');
-
-  }
-  else {
-  	navbar.removeClass('scrolled');
-  }
-
-});
-
-});
-
+//nicescroll
 $(function() {  
     $("html").niceScroll();
 
-});
 
+});
+$(document).ready(function(){
+        $(".do-nicescrol").niceScroll("{horizrailenabled:false}");
+});
 
 
 //button
@@ -42,6 +30,8 @@ $('.from-left').hover(function (){
    }, 200);
 
 })
+
+
 
 //show first info
 $('.info').first().show().animate({width:'40%'});
